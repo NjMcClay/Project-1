@@ -24,3 +24,7 @@ jobs:
           push: true
           # Replace 'njmcclay' with your actual Docker Hub username
           tags: ${{ secrets.DOCKER_USERNAME }}/project-1:latest
+
+
+
+#
