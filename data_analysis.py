@@ -44,6 +44,6 @@ plt.xticks(rotation=45)
 plt.title("Top 5 Protein-Rich Recipes by Cuisine")
 plt.xlabel("Cuisine Type")
 plt.ylabel("Protein (g)")
-plt.show()
+plt.savefig('plot.png')
 
 
