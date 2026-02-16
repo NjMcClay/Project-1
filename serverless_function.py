@@ -57,13 +57,13 @@ with open(LOCAL_CSV_PATH, newline='', encoding='utf-8') as csvfile:
     for row in reader:
         diet_type = row["Diet_type"]
 
-        if diet_type not in averages:
-            averages[diet_type] = {
-                "Protein": 0,
-                "Carbs": 0,
-                "Fat": 0,
-                "count": 0
-            }
+        # if diet_type not in averages:
+        #     averages[diet_type] = {
+        #         "Protein": 0,
+        #         "Carbs": 0,
+        #         "Fat": 0,
+        #         "count": 0
+        #     }
 
         averages[diet_type]["Protein"] += float(row["Protein(g)"])
         averages[diet_type]["Carbs"] += float(row["Carbs(g)"])
