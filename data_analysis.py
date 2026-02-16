@@ -1,8 +1,9 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
+import matplotlib; matplotlib.use('Agg')
 
-df = pd.read_csv("data/All_Diets.csv")
+df = pd.read_csv("All_Diets.csv")
 
 print(df.isna().sum())
 df.fillna(df.select_dtypes(include="number").mean(), inplace=True)
